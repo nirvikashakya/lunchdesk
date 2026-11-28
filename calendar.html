@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meal Calendar · LunchDesk</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">L</div>
+        <div><strong>LunchDesk</strong><small>Employee</small></div>
+      </div>
+      <div class="nav-title">Workspace</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="calendar.html" class="active">Meal Calendar</a>
+        <a href="qr.html">My QR</a>
+        <a href="orders.html">Order History</a>
+        <a href="balance.html">Balance</a>
+        <a href="notifications.html">Notifications <span class="badge">2</span></a>
+      </nav>
+      <div class="help-card">
+        <strong>Lunch, sorted.</strong>
+        Good food for your workday.
+      </div>
+      <div class="user-box">
+        <div class="avatar">RS</div>
+        <div>Raman Shrestha<small>Employee account</small></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Meal Calendar</h1>
+          <p>Pick a day to order, change or cancel your meal.</p>
+        </div>
+        <div class="top-user"><span class="avatar">RS</span> Raman Shrestha</div>
+      </div>
+
+      <div class="cal-layout">
+        <div class="card">
+          <h2>November 2026</h2>
+          <div class="cal-grid cal-head">
+            <div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div>
+          </div>
+          <div class="cal-grid" id="calendar"><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><button class="cell weekend" data-day="1" data-meal="" data-status="nomenu"><span class="num">1</span><span class="meal">&nbsp;</span><span class="st s-nomenu">No menu</span></button><button class="cell" data-day="2" data-meal="Dal bhat set" data-status="collected"><span class="num">2</span><span class="meal">Dal bhat set</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="3" data-meal="Veg momo" data-status="collected"><span class="num">3</span><span class="meal">Veg momo</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="4" data-meal="Chicken curry" data-status="collected"><span class="num">4</span><span class="meal">Chicken curry</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="5" data-meal="Veg thali" data-status="collected"><span class="num">5</span><span class="meal">Veg thali</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="6" data-meal="Khichdi set" data-status="collected"><span class="num">6</span><span class="meal">Khichdi set</span><span class="st s-collected">Collected</span></button><button class="cell weekend" data-day="7" data-meal="" data-status="nomenu"><span class="num">7</span><span class="meal">&nbsp;</span><span class="st s-nomenu">No menu</span></button><button class="cell weekend" data-day="8" data-meal="" data-status="nomenu"><span class="num">8</span><span class="meal">&nbsp;</span><span class="st s-nomenu">No menu</span></button><button class="cell" data-day="9" data-meal="Dal bhat set" data-status="collected"><span class="num">9</span><span class="meal">Dal bhat set</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="10" data-meal="Veg momo" data-status="missed"><span class="num">10</span><span class="meal">Veg momo</span><span class="st s-missed">Missed</span></button><button class="cell" data-day="11" data-meal="Chicken curry" data-status="collected"><span class="num">11</span><span class="meal">Chicken curry</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="12" data-meal="Veg thali" data-status="cancelled"><span class="num">12</span><span class="meal">Veg thali</span><span class="st s-cancelled">Cancelled</span></button><button class="cell" data-day="13" data-meal="Khichdi set" data-status="collected"><span class="num">13</span><span class="meal">Khichdi set</span><span class="st s-collected">Collected</span></button><button class="cell weekend" data-day="14" data-meal="" data-status="nomenu"><span class="num">14</span><span class="meal">&nbsp;</span><span class="st s-nomenu">No menu</span></button><button class="cell weekend" data-day="15" data-meal="" data-status="nomenu"><span class="num">15</span><span class="meal">&nbsp;</span><span class="st s-nomenu">No menu</span></button><button class="cell" data-day="16" data-meal="Dal bhat set" data-status="collected"><span class="num">16</span><span class="meal">Dal bhat set</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="17" data-meal="Veg momo" data-status="missed"><span class="num">17</span><span class="meal">Veg momo</span><span class="st s-missed">Missed</span></button><button class="cell" data-day="18" data-meal="Chicken curry" data-status="collected"><span class="num">18</span><span class="meal">Chicken curry</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="19" data-meal="Veg thali" data-status="charged"><span class="num">19</span><span class="meal">Veg thali</span><span class="st s-charged">Charged</span></button><button class="cell" data-day="20" data-meal="Khichdi set" data-status="collected"><span class="num">20</span><span class="meal">Khichdi set</span><span class="st s-collected">Collected</span></button><button class="cell weekend" data-day="21" data-meal="" data-status="nomenu"><span class="num">21</span><span class="meal">&nbsp;</span><span class="st s-nomenu">No menu</span></button><button class="cell weekend" data-day="22" data-meal="" data-status="nomenu"><span class="num">22</span><span class="meal">&nbsp;</span><span class="st s-nomenu">No menu</span></button><button class="cell" data-day="23" data-meal="Dal bhat set" data-status="collected"><span class="num">23</span><span class="meal">Dal bhat set</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="24" data-meal="Veg momo" data-status="collected"><span class="num">24</span><span class="meal">Veg momo</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="25" data-meal="Chicken curry" data-status="collected"><span class="num">25</span><span class="meal">Chicken curry</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="26" data-meal="Veg thali" data-status="collected"><span class="num">26</span><span class="meal">Veg thali</span><span class="st s-collected">Collected</span></button><button class="cell" data-day="27" data-meal="Khichdi set" data-status="collected"><span class="num">27</span><span class="meal">Khichdi set</span><span class="st s-collected">Collected</span></button><button class="cell weekend today" data-day="28" data-meal="" data-status="nomenu"><span class="num">28</span><span class="meal">&nbsp;</span><span class="st s-nomenu">No menu</span></button><button class="cell weekend" data-day="29" data-meal="" data-status="nomenu"><span class="num">29</span><span class="meal">&nbsp;</span><span class="st s-nomenu">No menu</span></button><button class="cell" data-day="30" data-meal="Dal bhat set" data-status="ordered"><span class="num">30</span><span class="meal">Dal bhat set</span><span class="st s-ordered">Ordered</span></button></div>
+        </div>
+
+        <aside class="card side-panel">
+          <h2 id="panel-title">Select a day</h2>
+          <p class="sub-title" id="panel-status">Click a day to see its meal and status.</p>
+          <div id="panel-body" hidden>
+            <p class="field-title">Meal choices</p>
+            <label class="choice"><input type="radio" name="meal" value="Dal bhat set"> Dal bhat set</label>
+            <label class="choice"><input type="radio" name="meal" value="Veg momo"> Veg momo</label>
+            <label class="choice"><input type="radio" name="meal" value="Chicken curry"> Chicken curry</label>
+            <button class="btn btn-block" type="button">Save order</button>
+            <button class="btn btn-block btn-outline" type="button" id="cancel-btn">Cancel order</button>
+            <p class="note">Cancel before 10:00 AM on the meal day for free. After that the meal cost is charged.</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <script>
+    const cells = document.querySelectorAll('.cell[data-day]');
+    const title = document.getElementById('panel-title');
+    const status = document.getElementById('panel-status');
+    const body = document.getElementById('panel-body');
+    const cancel = document.getElementById('cancel-btn');
+
+    cells.forEach(cell => {
+      cell.addEventListener('click', () => {
+        cells.forEach(c => c.classList.remove('selected'));
+        cell.classList.add('selected');
+        const date = new Date(2026, 10, Number(cell.dataset.day));
+        title.textContent = date.toLocaleDateString('en-GB',
+          { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+        const s = cell.dataset.status;
+        const hasMenu = s !== 'nomenu';
+        status.textContent = hasMenu ? cell.dataset.meal + ' · ' + s : 'No menu on weekends.';
+        body.hidden = !hasMenu;
+        cancel.disabled = s !== 'ordered';
+        document.querySelectorAll('input[name=meal]').forEach(r => r.checked = r.value === cell.dataset.meal);
+      });
+    });
+  </script>
+</body>
+</html>

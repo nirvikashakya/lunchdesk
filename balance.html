@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balance · LunchDesk</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">L</div>
+        <div><strong>LunchDesk</strong><small>Employee</small></div>
+      </div>
+      <div class="nav-title">Workspace</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="calendar.html">Meal Calendar</a>
+        <a href="qr.html">My QR</a>
+        <a href="orders.html">Order History</a>
+        <a href="balance.html" class="active">Balance</a>
+        <a href="notifications.html">Notifications <span class="badge">2</span></a>
+      </nav>
+      <div class="help-card">
+        <strong>Lunch, sorted.</strong>
+        Good food for your workday.
+      </div>
+      <div class="user-box">
+        <div class="avatar">RS</div>
+        <div>Raman Shrestha<small>Employee account</small></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Balance</h1>
+          <p>Your meal balance, deposits and spending in one place.</p>
+        </div>
+        <div class="top-user"><span class="avatar">RS</span> Raman Shrestha</div>
+      </div>
+
+      <div class="stats">
+        <div class="card stat"><div class="label">Current balance</div><div class="value">Rs. 760</div><div class="note">Includes Rs. 240 reserved for meals</div></div>
+        <div class="card stat"><div class="label">Total deposited</div><div class="value">Rs. 1,000</div><div class="note">Deposits received into your account</div></div>
+        <div class="card stat"><div class="label">Reserved amount</div><div class="value">Rs. 240</div><div class="note">Set aside for an upcoming meal</div></div>
+      </div>
+      <div class="card">
+        <h2>Transaction history</h2>
+        <div class="sub-title">Posted credits and debits to your meal account.</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Date</th><th>Description</th><th>Type</th><th class="num">Amount</th></tr></thead>
+            <tbody><tr><td>26 Oct 2026</td><td>Dal Bhat Set · lunch</td><td><span class="tag debit">Debit</span></td><td class="num">− Rs. 240</td></tr><tr><td>22 Oct 2026</td><td>Meal charge correction</td><td><span class="tag credit">Credit</span></td><td class="num">+ Rs. 240</td></tr><tr><td>21 Oct 2026</td><td>Dal Bhat Set · lunch</td><td><span class="tag debit">Debit</span></td><td class="num">− Rs. 240</td></tr><tr><td>12 Oct 2026</td><td>Account deposit · top-up</td><td><span class="tag credit">Credit</span></td><td class="num">+ Rs. 400</td></tr><tr><td>01 Oct 2026</td><td>Account deposit · opening</td><td><span class="tag credit">Credit</span></td><td class="num">+ Rs. 600</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

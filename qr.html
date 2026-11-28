@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My QR · LunchDesk</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">L</div>
+        <div><strong>LunchDesk</strong><small>Employee</small></div>
+      </div>
+      <div class="nav-title">Workspace</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="calendar.html">Meal Calendar</a>
+        <a href="qr.html" class="active">My QR</a>
+        <a href="orders.html">Order History</a>
+        <a href="balance.html">Balance</a>
+        <a href="notifications.html">Notifications <span class="badge">2</span></a>
+      </nav>
+      <div class="help-card">
+        <strong>Lunch, sorted.</strong>
+        Good food for your workday.
+      </div>
+      <div class="user-box">
+        <div class="avatar">RS</div>
+        <div>Raman Shrestha<small>Employee account</small></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>My QR</h1>
+          <p>Show this code to collect your meal.</p>
+        </div>
+        <div class="top-user"><span class="avatar">RS</span> Raman Shrestha</div>
+      </div>
+
+      <div class="card qr-card">
+        <h2>Dal bhat set</h2>
+        <p class="sub-title">Today · 12:30 PM pickup</p>
+        <div class="qr-box">QR code</div>
+        <p class="countdown">Expires in <strong id="timer">1:00</strong></p>
+        <button class="btn btn-block" type="button" id="refresh">Refresh code</button>
+        <p class="note">Each code is valid for 1 minute. Show it to the admin at the counter.</p>
+      </div>
+    </main>
+  </div>
+  <script>
+    let left = 60;
+    const timer = document.getElementById('timer');
+    function show() {
+      timer.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0');
+    }
+    setInterval(() => { if (left > 0) { left--; show(); } }, 1000);
+    document.getElementById('refresh').addEventListener('click', () => { left = 60; show(); });
+  </script>
+</body>
+</html>
