@@ -14,3 +14,5 @@
 When the Rs. 1000 runs out, do employees re-subscribe or top up any amount?
 
 **My answer:** Employees top up any amount (minimum Rs. 100) once their balance runs out, so they don't have to pay for a full new subscription.
+
+**Top-up:** When the balance runs out, employees can top up any amount (minimum Rs. 100)
