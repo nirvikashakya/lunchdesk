@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard · LunchDesk</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">L</div>
+        <div><strong>LunchDesk</strong><small>Employee</small></div>
+      </div>
+      <div class="nav-title">Workspace</div>
+      <nav class="nav">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="#">Meal Calendar</a>
+        <a href="#">My QR</a>
+        <a href="#">Order History</a>
+        <a href="#">Balance</a>
+        <a href="#">Notifications <span class="badge">2</span></a>
+      </nav>
+      <div class="help-card">
+        <strong>Lunch, sorted.</strong>
+        Good food for your workday.
+      </div>
+      <div class="user-box">
+        <div class="avatar">RS</div>
+        <div>Raman Shrestha<small>Employee account</small></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Your meals, balance and cutoff time in one place.</p>
+        </div>
+        <div class="top-user"><span class="avatar">RS</span> Raman Shrestha</div>
+      </div>
+
+      <div class="stats">
+        <div class="card stat">
+          <div class="label">Available balance</div>
+          <div class="value">Rs. 740</div>
+          <div class="note">Includes reserved meals</div>
+        </div>
+        <div class="card stat">
+          <div class="label">Next cutoff</div>
+          <div class="value">10:00 AM</div>
+          <div class="note">Order or cancel before this time</div>
+        </div>
+        <div class="card stat">
+          <div class="label">Meals this month</div>
+          <div class="value">12</div>
+          <div class="note">November 2026</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Recent orders</h2>
+        <div class="sub-title">Your latest meal orders.</div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Date</th><th>Meal</th><th>Status</th><th class="num">Price</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>24 Nov 2026</td><td>Dal bhat set</td><td><span class="tag credit">Collected</span></td><td class="num">Rs. 180</td></tr>
+              <tr><td>25 Nov 2026</td><td>Veg momo</td><td><span class="tag credit">Collected</span></td><td class="num">Rs. 150</td></tr>
+              <tr><td>26 Nov 2026</td><td>Chicken curry</td><td><span class="tag debit">Cancelled</span></td><td class="num">Rs. 220</td></tr>
+              <tr><td>27 Nov 2026</td><td>Veg thali</td><td><span class="tag">Ordered</span></td><td class="num">Rs. 170</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

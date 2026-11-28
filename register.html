@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register · LunchDesk</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="auth-page">
+    <div class="card auth-card">
+      <div class="brand">LunchDesk</div>
+      <h1>Create your account</h1>
+      <p class="sub">Subscribe to get access and a Rs. 1000 lunch balance.</p>
+      <form action="login.html" method="get">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="field">
+          <label for="confirm">Confirm password</label>
+          <input type="password" id="confirm" name="confirm" required>
+        </div>
+        <button type="submit" class="btn btn-block">Register</button>
+      </form>
+      <p class="switch">Already registered? <a href="login.html">Log in</a></p>
+    </div>
+  </main>
+</body>
+</html>
